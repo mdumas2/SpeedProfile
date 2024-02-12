@@ -1,2 +1,2 @@
 # SpeedProfile
-Velocity profile generator
+Speed profile generator
