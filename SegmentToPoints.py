@@ -45,7 +45,7 @@ class SegmentToPoints:
                 f.write(f'{x}\t{y}\n')
         print(f'Points saved to {filename}.tsv')
 
-    def generate_points_of_track(self, track_file, plot=False, save=False, result_filename=None):
+    def generate_points_from_track(self, track_file, plot=False, save=False, result_filename=None):
         track_data = None
         with open(track_file, 'r') as file:
             track_data = json.load(file)
@@ -67,7 +67,3 @@ class SegmentToPoints:
             if result_filename:
                 self._result_filename = result_filename
             self._save_points(self._track_x, self._track_y, self._result_filename)
-
-
-segment_to_points = SegmentToPoints()
-segment_to_points.generate_points_of_track(r'C:\Users\mateu\Documents\GitHub\SpeedProfile\Track.json', plot=True, save=True, result_filename='Segment_to_Points')
