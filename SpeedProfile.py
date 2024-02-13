@@ -4,19 +4,6 @@ import json
 MAX_ACCELERATION = 15.0
 MAX_SPEED = 7.0
 TIME_STEP = 0.01
-    
-segments = [
-    {"type": "straight", "length": 5.00},
-    {"type": "curve", "radius": 0.250, "arc_length": 0.40},
-    {"type": "straight", "length": 5.00},
-    {"type": "curve", "radius": 0.250, "arc_length": 0.40},
-    {"type": "straight", "length": 5.00},
-    {"type": "straight", "length": 5.00},
-    {"type": "curve", "radius": 0.250, "arc_length": 0.40},
-    {"type": "straight", "length": 5.00},
-    {"type": "curve", "radius": 0.250, "arc_length": 0.40},
-    {"type": "straight", "length": 5.00}
-]
 
 class SpeedProfile:
     def __init__(self):
