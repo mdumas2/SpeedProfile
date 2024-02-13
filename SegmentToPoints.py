@@ -1,4 +1,5 @@
 import json
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -39,11 +40,13 @@ class SegmentToPoints:
         plt.show()
 
     def _save_points(self, x_points, y_points, filename):
+        file_name = filename + '.tsv'
+        file_path = os.path.abspath(file_name)
         with open(filename + '.tsv', 'w') as f:
             f.write('X\tY\n')
             for x, y in zip(x_points, y_points):
                 f.write(f'{x}\t{y}\n')
-        print(f'Points saved to {filename}.tsv')
+        return file_path
 
     def generate_points_from_track(self, track_file, plot=False, save=False, result_filename=None):
         track_data = None
@@ -66,4 +69,5 @@ class SegmentToPoints:
         if save:
             if result_filename:
                 self._result_filename = result_filename
-            self._save_points(self._track_x, self._track_y, self._result_filename)
+            file_path = self._save_points(self._track_x, self._track_y, self._result_filename)
+            return file_path

@@ -1,0 +1,42 @@
+[
+    {
+        "type": "straight",
+        "length": 50.0
+    },
+    {
+        "type": "curve",
+        "radius": 25.0,
+        "arc_length": 38.466834312416985
+    },
+    {
+        "type": "straight",
+        "length": 50.0
+    },
+    {
+        "type": "curve",
+        "radius": 25.0,
+        "arc_length": 38.46683431241699
+    },
+    {
+        "type": "straight",
+        "length": 99.99999999999986
+    },
+    {
+        "type": "curve",
+        "radius": 25.0,
+        "arc_length": 38.46683431241699
+    },
+    {
+        "type": "straight",
+        "length": 50.0
+    },
+    {
+        "type": "curve",
+        "radius": 25.0,
+        "arc_length": 38.466834312417
+    },
+    {
+        "type": "straight",
+        "length": 50.0
+    }
+]
